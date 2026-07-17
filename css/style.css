@@ -28,3 +28,15 @@ a:active {
     background-color: rgb(237, 232, 232);
     text-decoration: underline;
 }
+table, th, td {
+    border: 5px solid black;
+    border-collapse:collapse;
+}
+td {
+    background-color: blue ;
+}
+div {
+    background-color: rgb(233, 233, 235);
+    border: 3px solid black;
+}
+
