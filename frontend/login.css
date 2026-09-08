@@ -1,67 +1,186 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: antiquewhite;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+
+    background-color: #f3eee8;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+/* =========================
+   SIGN UP BOX
+   ========================= */
+
 .login {
-    width: 300px;
-    margin: 100px auto;
-    padding: 30px;
+    width: 400px;
 
     background-color: white;
 
-    border: 2px solid black;
+    padding: 40px;
 
-    text-align: center;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
+
+/* Heading */
 
 .login h1 {
-    color: darkorange;
+    text-align: center;
+
+    color: #5b3924;
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
 }
 
 
+/* =========================
+   FORM
+   ========================= */
+
+.login form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* Labels */
+
 .login label {
-    display: block;
-    text-align: left;
+    color: #4a3021;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
 
     margin-top: 15px;
 }
 
 
+/* Input boxes */
+
 .login input {
     width: 100%;
-    padding: 10px;
 
-    margin-top: 5px;
+    padding: 13px;
 
-    box-sizing: border-box;
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
 }
 
 
+/* Input when clicked */
+
+.login input:focus {
+    border-color: #8b563c;
+
+    box-shadow: 0 0 5px rgba(139, 86, 60, 0.25);
+}
+
+
+/* =========================
+   SIGN UP BUTTON
+   ========================= */
+
 .login button {
-    width: 100%;
+    margin-top: 25px;
 
-    padding: 10px;
-
-    margin-top: 20px;
-
-    background-color: darkorange;
-
-    color: white;
+    padding: 13px;
 
     border: none;
 
+    border-radius: 25px;
+
+    background-color: #8b563c;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
     cursor: pointer;
+
+    transition: 0.3s;
 }
 
+
+/* Button hover */
 
 .login button:hover {
-    background-color: orangered;
+    background-color: #5b3924;
+
+    transform: translateY(-2px);
 }
 
 
-.login a {
-    color: darkorange;
+/* =========================
+   LOGIN LINK
+   ========================= */
+
+.login p {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+.login p a {
+    color: #8b563c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 500px) {
+
+    .login {
+        width: 90%;
+
+        padding: 30px 25px;
+    }
+
+    .login h1 {
+        font-size: 30px;
+    }
 }
