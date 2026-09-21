@@ -1,74 +1,114 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <title>Family gallery</title>
-        <link rel="stylesheet" href="style1.css">
-    </head>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Family Gallery</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+
+<body>
+
+
 <section class="gallery">
-<div id="our-gallery">
-    <h1>Our Gallery</h1>
-</div><br><br>
 
-    <div class="gallery-grid">
+    <div id="our-gallery">
 
-        <img src="images/family1.jpg" alt="Family photo">
+        <h1>Our Gallery</h1>
 
-        <img src="images/family2.jpg" alt="Family photo">
-
-        <img src="images/family3.jpg" alt="Family photo">
-
-        <img src="images/family4.jpg" alt="Family photo">
-
-        <img src="images/family4.jpg" alt="Family photo">
-
-        <img src="images/family4.jpg" alt="Family photo">
-
-        <img src="images/family4.jpg" alt="Family photo">
-
-        <img src="images/family4.jpg" alt="Family photo">
+        <p>
+            Share your favourite family memories
+        </p>
 
     </div>
+
+
+    <div class="upload-box">
+
+        <h2>
+            Upload your favorite family photos
+        </h2>
+
+
+        <form id="upload-form">
+
+            <input
+                type="file"
+                id="file-input"
+                accept="image/*"
+                multiple
+                required
+            >
+
+
+            <button type="submit">
+                Upload Images
+            </button>
+
+        </form>
+
+
+        <p id="upload-message"></p>
+
+    </div>
+
+
+    <div
+        class="gallery-grid"
+        id="gallery-grid">
+    </div>
+
 
 </section>
 
-
-<div class="footer1">
-         <footer class="footer1">
-
-        <h2>
-            My Family
-        </h2>
-
-        <p>
-            Together we create memories.
-        </p>
-
-        <div class="footer-links">
-
-            <a href="familywebsite.html">Home</a>
-
-            <a href="information.html">
-                Family Information
-            </a>
-
-            <a href="gallery.html">
-                Gallery
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
-        </div>
-
-        <hr>
-
-        <p class="copyright">
-            © 2026 My Family. All rights reserved.
-        </p>
-
-    </footer>
-    </div>
-</div>
+<script src="gallery.js"></script>
 </body>
+
+<footer class="footer1">
+
+    <h2>
+        My Family
+    </h2>
+
+
+    <p>
+        Together we create memories.
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="familywebsite.html">
+            Home
+        </a>
+
+
+        <a href="information.html">
+            Family Information
+        </a>
+
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+</footer>
+
 </html>

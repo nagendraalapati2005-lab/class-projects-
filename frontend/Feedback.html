@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <link rel="stylesheet" href="Feedback.css">
+    </head>
+     <body id ="feeback">
+        <h1>Your feeback</h1>
+
+        <p id="date"></p> 
+        <p id="time"></p>
+
+        <div class="form container"> 
+        <form id="feedbackForm">
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="rating">Your Rating for my Website</label>
+
+    <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+
+    <p>Rating: <span id="ratingValue">5</span>/10</p>
+
+    <label for="feedback">Feedback</label>
+
+    <textarea
+        id="feedback"
+        name="feedback"
+        placeholder="Write your feedback here"
+        required
+    ></textarea>
+
+    <input type="submit" value="Submit">
+
+    <p id="message"></p>
+
+</form>
+
+<script src="Feedback.js"></script>
+
+    </div> 
+</body> 
+<div class="footer1"> 
+            <footer class="footer1"> 
+                <h2> My Family </h2> 
+                <p> Together we create memories. 
+
+                </p> <div class="footer-links"> 
+                <a href="familywebsite.html">Home</a>
+                <a href="information.html"> Family Information </a> 
+                <a href="gallery.html"> Gallery </a> 
+                <a href="feedback.html"> Feedback </a> </div> 
+            </footer> 
+        </div> 
+    </div> 
+</html>

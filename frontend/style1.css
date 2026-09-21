@@ -1,8 +1,4 @@
 
-/* ==============================
-   BASIC SETTINGS
-   ============================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -16,9 +12,7 @@ body {
 }
 
 
-/* ==============================
-   MAIN WEBSITE
-   ============================== */
+
 
 .grid-continer {
     width: 100%;
@@ -26,79 +20,97 @@ body {
 }
 
 
-/* ==============================
-   HEADER
-   ============================== */
-
 .header1 {
-    width: 100%;
-    background-color: white;
+    background: linear-gradient(135deg, #4a3021, #8b563c);
+
+    color: white;
+
+    min-height: 110px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    padding: 20px 7%;
+    font-size: 30px;
 
-    border-bottom: 1px solid #ddd;
+    padding: 15px 6%;
 
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    gap: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 
-/* Website name */
+/* Logo */
 
-.header1 {
-    color: #5b3924;
-    font-size: 28px;
-    font-weight: bold;
+.logo {
+    width: 75px;
+    height: 75px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid white;
+
+    transition: 0.3s;
 }
 
-.header1 > span {
-    color: #b46b45;
-    margin-right: 5px;
+.logo:hover {
+    transform: rotate(5deg) scale(1.05);
 }
 
 
-/* ==============================
-   NAVIGATION MENU
-   ============================== */
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    margin-left: auto;
+}
 
 .menu ul {
     list-style: none;
 
     display: flex;
-    gap: 30px;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.menu li {
+    font-size: 18px;
 }
 
 .menu a {
+    color: white;
+
     text-decoration: none;
 
-    color: #444;
+    padding: 10px 15px;
 
-    font-size: 15px;
-    font-weight: bold;
+    border-radius: 20px;
 
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #b46b45;
+    background-color: rgba(255, 255, 255, 0.18);
+
+    transform: translateY(-2px);
 }
 
 
-/* ==============================
-   HERO / MAIN SECTION
-   ============================== */
+
+/* =========================
+   HERO / MAIN CONTENT
+========================= */
 
 .content1 {
     min-height: 650px;
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
@@ -110,7 +122,7 @@ body {
 }
 
 
-/* Welcome */
+/* Welcome text */
 
 .small-title {
     color: #b46b45;
@@ -135,12 +147,15 @@ body {
 }
 
 
-/* ==============================
+/* =========================
    FAMILY IMAGE
-   ============================== */
+========================= */
+
+
 
 .gallery-grid {
     width: 100%;
+
     display: flex;
     justify-content: center;
 
@@ -165,7 +180,6 @@ body {
     max-width: 600px;
 
     font-size: 17px;
-
     line-height: 1.7;
 
     color: #666;
@@ -174,15 +188,14 @@ body {
 }
 
 
-/* ==============================
+/* =========================
    BUTTON
-   ============================== */
+========================= */
 
 .hero-button {
     display: inline-block;
 
     background-color: #8b563c;
-
     color: white;
 
     text-decoration: none;
@@ -198,14 +211,13 @@ body {
 
 .hero-button:hover {
     background-color: #5b3924;
-
     transform: translateY(-2px);
 }
 
 
-/* ==============================
+/* =========================
    FAMILY FACTS
-   ============================== */
+========================= */
 
 .facts {
     background-color: white;
@@ -216,13 +228,12 @@ body {
 }
 
 
-/* Small title */
+/* Section label */
 
 .section-label {
     color: #b46b45;
 
     font-size: 13px;
-
     font-weight: bold;
 
     letter-spacing: 3px;
@@ -231,7 +242,7 @@ body {
 }
 
 
-/* Heading */
+/* Facts heading */
 
 .facts h2 {
     color: #4a3021;
@@ -248,7 +259,6 @@ body {
     list-style: none;
 
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
 
     gap: 20px;
@@ -277,9 +287,6 @@ body {
     transition: 0.3s;
 }
 
-
-/* Card hover */
-
 .facts li:hover {
     transform: translateY(-5px);
 
@@ -287,27 +294,21 @@ body {
 }
 
 
-/* ==============================
-   FOOTER
-   ============================== */
-
 .footer1 {
-    background-color: #35251c;
+    background-color: #3d2419;
 
     color: white;
 
     text-align: center;
 
-    padding: 50px 20px;
+    padding: 20px 10px;
 }
-
 
 .footer1 h2 {
     font-size: 28px;
 
     margin-bottom: 10px;
 }
-
 
 .footer1 p {
     color: #d5cbc4;
@@ -319,7 +320,7 @@ body {
 /* Footer links */
 
 .footer-links {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .footer-links a {
@@ -337,131 +338,9 @@ body {
 }
 
 
-/* Horizontal line */
-
-.footer1 hr {
-    border: none;
-
-    border-top: 1px solid #5b4940;
-
-    margin-bottom: 20px;
-}
-
-
-/* Copyright */
-
-.footer1 .copyright {
-    font-size: 13px;
-
-    margin-bottom: 0;
-}
-
-
-/* ==============================
-   TABLET
-   ============================== */
-
-@media (max-width: 900px) {
-
-    .header1 {
-        padding: 20px 4%;
-    }
-
-    .menu ul {
-        gap: 15px;
-    }
-
-    .content1 h1 {
-        font-size: 50px;
-    }
-
-    .gallery-grid img {
-        width: 80%;
-    }
-
-    .facts ul {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-/* ==============================
-   MOBILE
-   ============================== */
-
-@media (max-width: 650px) {
-
-    /* Header */
-
-    .header1 {
-        flex-direction: column;
-
-        gap: 20px;
-
-        text-align: center;
-    }
-
-
-    /* Navigation */
-
-    .menu ul {
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 15px;
-    }
-
-
-    /* Hero */
-
-    .content1 {
-        min-height: auto;
-
-        padding: 60px 20px;
-    }
-
-    .content1 h1 {
-        font-size: 40px;
-    }
-
-
-    /* Image */
-
-    .gallery-grid img {
-        width: 100%;
-
-        height: 250px;
-    }
-
-
-    /* Facts */
-
-    .facts {
-        padding: 60px 20px;
-    }
-
-    .facts h2 {
-        font-size: 32px;
-    }
-
-    .facts ul {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* Footer */
-
-    .footer-links a {
-        display: block;
-
-        margin: 12px;
-    }
-}
-S
-/* =================================
+/* =========================
    FAMILY INFORMATION PAGE
-   ================================= */
+========================= */
 
 .information-page {
     min-height: 100vh;
@@ -496,13 +375,12 @@ S
 }
 
 
-/* =================================
-   TABLE
-   ================================= */
+/* =========================
+   INFORMATION TABLE
+========================= */
 
 .information-page table {
     width: 100%;
-
     max-width: 1100px;
 
     margin: auto;
@@ -519,7 +397,7 @@ S
 }
 
 
-/* Table heading */
+/* Table header */
 
 .information-page th {
     background-color: #8b563c;
@@ -549,30 +427,30 @@ S
 }
 
 
-/* Alternating rows */
+/* Alternate rows */
 
 .information-page tr:nth-child(even) {
     background-color: #faf6f2;
 }
 
 
-/* Hover effect */
+/* Row hover */
 
 .information-page tr:hover {
     background-color: #f1e5dc;
 }
 
 
-/* Last row */
+/* Remove border from last row */
 
 .information-page tr:last-child td {
     border-bottom: none;
 }
 
 
-/* =================================
+/* =========================
    BACK BUTTON
-   ================================= */
+========================= */
 
 .back-button {
     display: inline-block;
@@ -594,7 +472,6 @@ S
     transition: 0.3s;
 }
 
-
 .back-button:hover {
     background-color: #5b3924;
 
@@ -602,14 +479,113 @@ S
 }
 
 
-/* =================================
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .header1 {
+        padding: 20px 4%;
+    }
+
+    .menu ul {
+        gap: 15px;
+    }
+
+    .content1 h1 {
+        font-size: 50px;
+    }
+
+    .gallery-grid img {
+        width: 80%;
+    }
+
+    .facts ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
    MOBILE
-   ================================= */
+========================= */
+
+@media (max-width: 650px) {
+
+    /* Header */
+
+    .header1 {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    /* Navigation */
+
+    .menu ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    /* Hero */
+
+    .content1 {
+        min-height: auto;
+
+        padding: 60px 20px;
+    }
+
+    .content1 h1 {
+        font-size: 40px;
+    }
+
+    /* Image */
+
+    .gallery-grid img {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Facts */
+
+    .facts {
+        padding: 60px 20px;
+    }
+
+    .facts h2 {
+        font-size: 32px;
+    }
+
+    .facts ul {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+
+    .footer-links a {
+        display: block;
+
+        margin: 12px;
+    }
+}
+
+
+/* =========================
+   MOBILE INFORMATION PAGE
+========================= */
 
 @media (max-width: 750px) {
 
     .information-page {
         padding: 50px 15px;
+
+        overflow-x: auto;
     }
 
 
@@ -637,5 +613,4 @@ S
     .information-page td {
         padding: 14px 10px;
     }
-
-}
+}  
