@@ -142,6 +142,18 @@ body {
 .footer-links a:hover {
     color: #d99b78;
 }
+.instagram-link {
+    display: inline-flex;     /* icon and word sit side by side */
+    align-items: center;      /* lined up vertically */
+    gap: 8px;                 /* space between icon and word */
+    color: white;
+    text-decoration: none;    /* removes the underline */
+    font-size: 15px;
+}
+
+.instagram-link:hover {
+    color: #e8c55a;           /* turns gold when you point at it */
+}
 
 
 /* Mobile */

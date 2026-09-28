@@ -11,14 +11,10 @@ body {
     color: #333;
 }
 
-
-
-
 .grid-continer {
     width: 100%;
     min-height: 100vh;
 }
-
 
 .header1 {
     background: linear-gradient(135deg, #4a3021, #8b563c);
@@ -39,9 +35,6 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Logo */
-
 .logo {
     width: 75px;
     height: 75px;
@@ -58,11 +51,6 @@ body {
 .logo:hover {
     transform: rotate(5deg) scale(1.05);
 }
-
-
-/* =========================
-   MENU
-========================= */
 
 .menu {
     margin-left: auto;
@@ -101,11 +89,6 @@ body {
 }
 
 
-
-/* =========================
-   HERO / MAIN CONTENT
-========================= */
-
 .content1 {
     min-height: 650px;
 
@@ -122,8 +105,6 @@ body {
 }
 
 
-/* Welcome text */
-
 .small-title {
     color: #b46b45;
 
@@ -135,9 +116,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-/* Main heading */
-
 .content1 h1 {
     color: #4a3021;
 
@@ -145,13 +123,6 @@ body {
 
     margin-bottom: 30px;
 }
-
-
-/* =========================
-   FAMILY IMAGE
-========================= */
-
-
 
 .gallery-grid {
     width: 100%;
@@ -174,8 +145,6 @@ body {
 }
 
 
-/* Description */
-
 .content1 > p:not(.small-title) {
     max-width: 600px;
 
@@ -186,11 +155,6 @@ body {
 
     margin-bottom: 30px;
 }
-
-
-/* =========================
-   BUTTON
-========================= */
 
 .hero-button {
     display: inline-block;
@@ -214,11 +178,6 @@ body {
     transform: translateY(-2px);
 }
 
-
-/* =========================
-   FAMILY FACTS
-========================= */
-
 .facts {
     background-color: white;
 
@@ -227,8 +186,6 @@ body {
     padding: 80px 7%;
 }
 
-
-/* Section label */
 
 .section-label {
     color: #b46b45;
@@ -241,9 +198,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-/* Facts heading */
-
 .facts h2 {
     color: #4a3021;
 
@@ -251,9 +205,6 @@ body {
 
     margin-bottom: 40px;
 }
-
-
-/* Facts list */
 
 .facts ul {
     list-style: none;
@@ -267,9 +218,6 @@ body {
 
     margin: auto;
 }
-
-
-/* Fact cards */
 
 .facts li {
     background-color: #f8f4ef;
@@ -316,9 +264,6 @@ body {
     margin-bottom: 25px;
 }
 
-
-/* Footer links */
-
 .footer-links {
     margin-bottom: 0px;
 }
@@ -337,11 +282,6 @@ body {
     color: #d99b78;
 }
 
-
-/* =========================
-   FAMILY INFORMATION PAGE
-========================= */
-
 .information-page {
     min-height: 100vh;
 
@@ -353,8 +293,6 @@ body {
 }
 
 
-/* Page heading */
-
 .information-page h1 {
     color: #4a3021;
 
@@ -364,8 +302,6 @@ body {
 }
 
 
-/* Introduction */
-
 .information-page .intro {
     color: #777;
 
@@ -374,10 +310,6 @@ body {
     margin-bottom: 40px;
 }
 
-
-/* =========================
-   INFORMATION TABLE
-========================= */
 
 .information-page table {
     width: 100%;
@@ -396,9 +328,6 @@ body {
     overflow: hidden;
 }
 
-
-/* Table header */
-
 .information-page th {
     background-color: #8b563c;
 
@@ -413,9 +342,6 @@ body {
     letter-spacing: 1px;
 }
 
-
-/* Table cells */
-
 .information-page td {
     padding: 18px 15px;
 
@@ -426,95 +352,73 @@ body {
     font-size: 15px;
 }
 
-
-/* Alternate rows */
-
 .information-page tr:nth-child(even) {
     background-color: #faf6f2;
 }
-
-
-/* Row hover */
 
 .information-page tr:hover {
     background-color: #f1e5dc;
 }
 
-
-/* Remove border from last row */
-
 .information-page tr:last-child td {
     border-bottom: none;
 }
 
-
-/* =========================
-   BACK BUTTON
-========================= */
-
 .back-button {
-    display: inline-block;
-
-    margin-top: 35px;
-
-    padding: 12px 25px;
-
-    background-color: #8b563c;
-
+    position: absolute;      /* the sticky note: place it exactly where I say */
+    top: 24px;               /* 24px down from the top edge */
+    left: 32px;              /* 32px in from the left edge */
+    background-color: #8b573c;
     color: white;
-
-    text-decoration: none;
-
-    border-radius: 25px;
-
+    padding: 10px 22px;
+    border-radius: 999px;    /* makes the pill shape */
+    text-decoration: none;   /* removes the underline */
     font-weight: bold;
-
-    transition: 0.3s;
+    font-size: 15px;
 }
 
 .back-button:hover {
-    background-color: #5b3924;
+    background-color: #6f432d;   /* slightly darker when you point at it */
+}
+.footer-social {
+    margin-top: 24px;
+}
 
-    transform: translateY(-2px);
+.instagram-link {
+    display: inline-flex;     /* icon and word sit side by side */
+    align-items: center;      /* lined up vertically */
+    gap: 8px;                 /* space between icon and word */
+    color: white;
+    text-decoration: none;    /* removes the underline */
+    font-size: 15px;
+}
+
+.instagram-link:hover {
+    color: #e8c55a;           /* turns gold when you point at it */
 }
 
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 900px) {
-
     .header1 {
         padding: 20px 4%;
     }
-
     .menu ul {
         gap: 15px;
     }
-
     .content1 h1 {
         font-size: 50px;
     }
-
     .gallery-grid img {
         width: 80%;
     }
-
     .facts ul {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 650px) {
-
-    /* Header */
-
     .header1 {
         flex-direction: column;
 
@@ -522,9 +426,6 @@ body {
 
         text-align: center;
     }
-
-    /* Navigation */
-
     .menu ul {
         flex-wrap: wrap;
 
@@ -532,53 +433,33 @@ body {
 
         gap: 15px;
     }
-
-    /* Hero */
-
     .content1 {
         min-height: auto;
 
         padding: 60px 20px;
     }
-
     .content1 h1 {
         font-size: 40px;
     }
-
-    /* Image */
-
     .gallery-grid img {
         width: 100%;
         height: 250px;
     }
-
-    /* Facts */
-
     .facts {
         padding: 60px 20px;
     }
-
     .facts h2 {
         font-size: 32px;
     }
-
     .facts ul {
         grid-template-columns: 1fr;
     }
-
-    /* Footer */
-
     .footer-links a {
         display: block;
 
         margin: 12px;
     }
 }
-
-
-/* =========================
-   MOBILE INFORMATION PAGE
-========================= */
 
 @media (max-width: 750px) {
 
@@ -587,28 +468,15 @@ body {
 
         overflow-x: auto;
     }
-
-
     .information-page h1 {
         font-size: 35px;
     }
-
-
-    /*
-       Allow the table to scroll
-       horizontally on small screens
-    */
-
     .information-page {
         overflow-x: auto;
     }
-
-
     .information-page table {
         min-width: 700px;
     }
-
-
     .information-page th,
     .information-page td {
         padding: 14px 10px;
