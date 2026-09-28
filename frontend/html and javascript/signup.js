@@ -9,7 +9,7 @@ signupForm.addEventListener("submit", async (event) => {
     const password = document.getElementById("password").value.trim();
 
     try {
-        const response = await fetch("http://localhost:3000/signup", {
+        const response = await fetch(API_URL + "/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

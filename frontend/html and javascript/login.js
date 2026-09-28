@@ -8,7 +8,7 @@ if (loginForm) {
         const password = document.getElementById("password").value.trim();
 
         try {
-            const response = await fetch("http://localhost:3000/login", {
+            const response = await fetch(API_URL + "/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

@@ -19,7 +19,7 @@ form.addEventListener("submit", async function(event) {
 
     try {
         const response = await fetch(
-            "http://localhost:3000/gallery",
+            API_URL + "/gallery",
             {
                 method: "POST",
                 body: formData
@@ -46,7 +46,7 @@ async function loadGallery() {
 
     try {
         const response = await fetch(
-            "http://localhost:3000/gallery"
+            API_URL + "/gallery"
         );
 
         const images = await response.json();
@@ -61,7 +61,7 @@ async function loadGallery() {
             const img = document.createElement("img");
 
             img.src =
-                "http://localhost:3000/uploads/" +
+                API_URL + "/uploads/" +
                 image.image_path;
 
             img.alt = image.image_name;
