@@ -70,7 +70,7 @@ form.addEventListener("submit", async function(event) {
 
         // Send data to backend
         const response = await fetch(
-            "http://localhost:3000/feedback",
+            API_URL + "/feedback",
             {
                 method: "POST",
 
